@@ -1,0 +1,322 @@
+* {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+}
+
+html {
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.above-div {
+  position: absolute;
+  width: 100%;
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* pointer-events: none; */
+}
+
+.first-div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: all;
+}
+
+.huge-title {
+  color: white;
+  font-size: 8vw;
+  padding: 0;
+  margin: 0;
+}
+
+.under-title {
+  color: white;
+  font-weight: 400;
+  font-size: 1.2vw;
+  margin-top: 5vh;
+}
+
+.shit {
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
+}
+
+.text {
+  color: white;
+  font-weight: 400;
+  font-size: 1vw;
+  margin: 0;
+  /* pointer-events: all; */
+}
+
+.text-title {
+  color: white;
+  font-weight: 600;
+  font-size: 1.2vw;
+  margin: 0;
+}
+
+.commands {
+  pointer-events: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.cool {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 4vw;
+}
+
+#borders {
+  pointer-events: auto;
+}
+
+.apollo-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  align-items: center;
+}
+
+.round {
+  height: 0.8vw;
+  width: 0.8vw;
+  border-radius: 0.5vw;
+  margin-left: 0.5vw;
+}
+
+.title {
+  color: white;
+  font-weight: 700;
+  font-size: 2vw;
+  margin: 0;
+}
+
+.land-info {
+  visibility: hidden;
+  margin-top: 8vh;
+  /* position: absolute; */
+  /* right: 0; */
+  /* top: 150vh; */
+}
+
+.top-bar {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  margin-top: 4vh;
+  margin-left: 4vh;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.space {
+  margin-right: 4vh;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+h1,
+h2,
+h3,
+h6,
+a {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none;
+  cursor: default;
+}
+
+.scroll-bottom {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  /* justify-content: center; */
+  align-items: center;
+  position: absolute;
+  top: 95vh;
+}
+
+.typewriter h5 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /* letter-spacing: 0.15em; Adjust as needed */
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: gray;
+  }
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 3vh;
+  display: flex;
+  width: 100vw;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom {
+  font-size: 0.8vw;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.infos {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.infos-main-div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30vw;
+  padding-right: 30vw;
+  justify-content: center;
+  align-items: center;
+  line-height: 2.5vh;
+}
+
+/* loader */
+.loader {
+  --color: white;
+  --size-mid: 6vmin;
+  --size-dot: 1.5vmin;
+  --size-bar: 0.4vmin;
+  --size-square: 3vmin;
+
+  display: block;
+  position: relative;
+  width: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.loader::before,
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+}
+.loader.--8::before,
+.loader.--8::after {
+  width: var(--size-dot);
+  height: var(--size-dot);
+  border-radius: 50%;
+  background-color: var(--color);
+}
+
+.loader.--8::before {
+  top: calc(50% + 4vmin);
+  animation: loader-8-1 0.8s cubic-bezier(0.06, 0.01, 0.49, 1.18) infinite;
+}
+
+.loader.--8::after {
+  opacity: 0;
+  top: calc(50% - 2vmin);
+  animation: loader-8-2 0.8s cubic-bezier(0.46, -0.1, 0.27, 1.07) 0.2s infinite;
+}
+
+@keyframes loader-8-1 {
+  0%,
+  55%,
+  100% {
+    opacity: 0;
+  }
+
+  0% {
+    transform: scale(0.2);
+  }
+
+  22% {
+    opacity: 1;
+  }
+
+  33%,
+  55% {
+    transform: scale(1) translateY(-6vmin);
+  }
+}
+
+@keyframes loader-8-2 {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 0.3;
+  }
+
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(4);
+  }
+}

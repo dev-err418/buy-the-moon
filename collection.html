@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collection</title>
+    <link rel="stylesheet" href="./apollo.style.css" />
+  </head>
+  <body>
+    <div class="main-div">
+      <nav class="top-bar">
+        <!-- < onclick="alert('h')"> -->
+        <a class="text space" href="index.html">Home</a>
+        <!-- </button> -->
+        <!-- <button> -->
+        <a class="text space" href="apollo.html">Apollo</a>
+        <!-- </button> -->
+        <!-- <button> -->
+        <a class="text space" href="infos.html">Infos</a>
+        <!-- </button> -->
+        <!-- <button> -->
+        <a class="text space">Collection</a>
+        <a class="text space">OpenSea</a>
+        <!-- </button> -->
+      </nav>
+      <div
+        style="
+          height: 100vh;
+          width: 100vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+        "
+      >
+        <h1 class="title">Collection</h1>
+        <h6 class="under-title" style="margin: 0">
+          The whole collection with its 24 NFTs.
+        </h6>
+        <h6 class="under-title">(Scroll to continue...)</h6>
+      </div>
+      <div id="a-card-container"></div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"></script>
+  <script src="./collection.js"></script>
+</html>

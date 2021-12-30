@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Buy the moon</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div
+      id="loading-div"
+      style="
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+      "
+    >
+      <div class="item">
+        <i class="loader --8"></i>
+      </div>
+      <h1 class="under-title">Loading...</h1>
+    </div>
+    <nav class="top-bar">
+      <!-- < onclick="alert('h')"> -->
+      <a class="text space">Home</a>
+      <!-- </button> -->
+      <!-- <button> -->
+      <a class="text space" href="apollo.html">Apollo</a>
+      <!-- </button> -->
+      <!-- <button> -->
+      <a class="text space" href="infos.html">Infos</a>
+      <!-- </button> -->
+      <!-- <button> -->
+      <a class="text space" href="collection.html">Collection</a>
+      <a class="text space">OpenSea</a>
+      <!-- </button> -->
+    </nav>
+    <div id="above-div" class="above-div">
+      <div class="first-div">
+        <h1 class="huge-title">Buy the moon</h1>
+        <h3 class="under-title">
+          Become the official owner of a land on the moon by purchasing an NFT.
+        </h3>
+      </div>
+      <div class="scroll-bottom">
+        <button
+          style="z-index: 2; pointer-events: auto"
+          onclick="window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: 'smooth' })"
+        >
+          <div class="typewriter">
+            <h5 class="text">Click this to continue or scroll down.</h5>
+          </div>
+        </button>
+      </div>
+      <div class="shit">
+        <div
+          style="
+            pointer-events: none;
+            position: absolute;
+            bottom: 3vh;
+            left: 3vh;
+          "
+        >
+          <button
+            onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'})"
+            style="z-index: 2; pointer-events: auto"
+          >
+            <h5 class="text">Go back up ↑</h5>
+          </button>
+        </div>
+        <div class="cool">
+          <div class="commands">
+            <input
+              type="checkbox"
+              id="borders"
+              name="borders"
+              onclick="showHideBorders()"
+            />
+
+            <div class="text">Show borders</div>
+          </div>
+          <h2 class="text-title">Apollo missions :</h2>
+          <div class="apollo-container">
+            <h6 class="text">Apollo 11</h6>
+            <div class="round" style="background-color: #845ec1"></div>
+          </div>
+          <div class="apollo-container">
+            <h6 class="text">Apollo 12</h6>
+            <div class="round" style="background-color: #d65db2"></div>
+          </div>
+          <div class="apollo-container">
+            <h6 class="text">Apollo 14</h6>
+            <div class="round" style="background-color: #eb6b8f"></div>
+          </div>
+          <div class="apollo-container">
+            <h6 class="text">Apollo 15</h6>
+            <div class="round" style="background-color: #ef946f"></div>
+          </div>
+          <div class="apollo-container">
+            <h6 class="text">Apollo 16</h6>
+            <div class="round" style="background-color: #f6c660"></div>
+          </div>
+          <div class="apollo-container">
+            <h6 class="text">Apollo 17</h6>
+            <div class="round" style="background-color: #f9f771"></div>
+          </div>
+          <div id="infos" class="land-info"></div>
+        </div>
+        <div class="bottom-text">
+          <h5 class="text bottom">
+            Click on the moon to see specific land infos.
+          </h5>
+          <h5 class="text bottom">Drag to move, scroll to zoom.</h5>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@2410ad1a8f5844df00191600eafda59def537830/examples/js/controls/OrbitControls.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

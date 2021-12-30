@@ -1,0 +1,161 @@
+* {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+}
+
+html {
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #000;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.main-div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 30vh;
+}
+
+.title {
+  color: white;
+  font-size: 5vw;
+  padding: 0;
+  margin: 0;
+  margin-top: 12vh;
+}
+
+.under-title {
+  color: white;
+  font-size: 1vw;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 8vh;
+}
+
+h4 {
+  color: white;
+  font-size: 2vw;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2vh;
+}
+
+h6 {
+  color: white;
+  font-size: 1vw;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  /* margin-bottom: 8vh; */
+}
+
+.in-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  /* align-items: center; */
+  margin-left: 4vw;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8vh;
+  height: 200px;
+  /* background-color: black; */
+  padding: 2vh;
+  border-radius: 2vh;
+  perspective: 3200px;
+}
+
+.space {
+  padding-right: 4vh;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.top-bar {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  margin-top: 4vh;
+  margin-left: 4vh;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.text {
+  color: white;
+  font-weight: 400;
+  font-size: 1vw;
+  margin: 0;
+}
+
+.a-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 0; */
+}
+
+.a-card-coos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.a-card-title {
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.a-card-coos-text {
+  font-size: 15px;
+  color: white;
+  margin: 0;
+  font-weight: 300;
+}
+
+#a-card-container {
+  width: 100vw;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  /* display: flex; */
+  /* padding: 0; */
+  /* margin: 0; */
+  /* display: grid; */
+}
