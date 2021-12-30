@@ -3,11 +3,11 @@ var renderer, moon, world, mouse, scene, camera, arcs;
 var textureURL =
   "https://s3-us-west-2.amazonaws.com/s.cdpn.io/17271/lroc_color_poles_1k.jpg";
 // var textureURL = "./assets/moon.tif";
-var textureURL = "./assets/moon_small.JPG";
+var textureURL = "./assets/moon_small.jpg";
 // var displacementURL =
 // "https://s3-us-west-2.amazonaws.com/s.cdpn.io/17271/ldem_3_8bit.jpg";
 // var displacementURL = "./assets/texture.tif";
-var displacementURL = "./assets/texture_small.JPG";
+var displacementURL = "./assets/texture_small.jpg";
 // var worldURL = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/17271/hipp8_s.jpg";
 var worldURL = "./assets/sky.png";
 
