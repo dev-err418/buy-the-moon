@@ -1,7 +1,7 @@
 var renderer, moon, world, mouse, scene, camera, arcs;
 
-var textureURL =
-  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/17271/lroc_color_poles_1k.jpg";
+//var textureURL =
+  //"https://s3-us-west-2.amazonaws.com/s.cdpn.io/17271/lroc_color_poles_1k.jpg";
 // var textureURL = "./assets/moon.tif";
 var textureURL = "./assets/moon_small.jpg";
 // var displacementURL =
