@@ -20,7 +20,7 @@
       <!-- </button> -->
       <!-- <button> -->
       <a class="text space" href="collection.html">Collection</a>
-      <a class="text space">OpenSea</a>
+      <a class="text space" id="timer"></a>
       <!-- </button> -->
     </nav>
     <div class="infos-main-div">
@@ -36,4 +36,24 @@
       </h6>
     </div>
   </body>
+  <script>
+    //timer
+    var days, hours, minutes, seconds;
+    var countDownDate = new Date("Feb 28, 2022 23:59:59").getTime();
+
+    var counter = document.getElementById("timer");
+
+    var myfunc = setInterval(function () {
+      var now = new Date().getTime();
+      var timeleft = countDownDate - now;
+
+      days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+      hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+      seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+      counter.innerHTML = `in ${days} d : ${hours} h : ${minutes} min : ${seconds}s`;
+    }, 1000);
+
+    myfunc;
+  </script>
 </html>

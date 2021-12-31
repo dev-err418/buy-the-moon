@@ -1,3 +1,22 @@
+//timer
+var days, hours, minutes, seconds;
+var countDownDate = new Date("Feb 28, 2022 23:59:59").getTime();
+
+var counter = document.getElementById("timer");
+
+var myfunc = setInterval(function () {
+  var now = new Date().getTime();
+  var timeleft = countDownDate - now;
+
+  days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+  hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+  seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+  counter.innerHTML = `in ${days} d : ${hours} h : ${minutes} min : ${seconds}s`;
+}, 1000);
+
+myfunc;
+
 var renderer, moon, world, mouse, scene, camera, arcs;
 
 var textureURL =
@@ -250,8 +269,7 @@ function init() {
       title.innerHTML = `Land #${current}`;
       const area = document.createElement("h6");
       area.className = "text";
-      area.innerHTML =
-        "Area : 1'580'417 km²";
+      area.innerHTML = "Area : 1'580'417 km²";
 
       main.appendChild(title);
       main.appendChild(area);
