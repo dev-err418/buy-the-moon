@@ -2,7 +2,7 @@
 
 I always loved spaceship so I created this website... Check it out (on big screens) : https://buy-the-moon.pages.dev/
 
-First three.js web site that I built with 3d. All the 3d is done with JavaScript with three.js. Was really fun to make !
+First three.js website that I built with 3d. All the 3d is done with JavaScript with three.js. Was really fun to make !
 
 ![vid_low](https://user-images.githubusercontent.com/59390256/184400712-e2ca248f-4af0-424f-a65d-63cd752e9ecd.gif)
 
