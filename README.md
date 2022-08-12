@@ -1,6 +1,6 @@
 # Buy The Moon 🚀
 
-I always loved spaceship so I created this website... To check it out (on big screens) : https://buy-the-moon.pages.dev/
+I always loved spaceship so I created this website... Check it out (on big screens) : https://buy-the-moon.pages.dev/
 
 First three.js web site that I built with 3d. All the 3d is done with JavaScript with three.js. Was really fun to make !
 
